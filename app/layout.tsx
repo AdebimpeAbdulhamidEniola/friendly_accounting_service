@@ -1,5 +1,5 @@
 import "./globals.css";
-import workSans from "@/font";
+import {workSans} from "@/font";
 
 
 export default function RootLayout({

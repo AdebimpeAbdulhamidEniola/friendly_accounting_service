@@ -1,4 +1,4 @@
-import Navigation from "@/components/common/navigation"
+import Navigation from "@/components/common/Navigation"
 
 const Home = () => {
   return(
