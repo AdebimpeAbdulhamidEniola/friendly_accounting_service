@@ -32,6 +32,7 @@ const services = [
       { id: "trust", label: "Trust Taxes" },
     ],
     reverse: true,   // ← second image reversed (image right)
+    className: "lg:ml-auto"
   },
   {
     id: "bookkeeping",
@@ -53,7 +54,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="space-y-3 md:space-y-5">
+    <section className="space-y-3 md:space-y-5 md:mx-6 mx-4 lg:px-1">
       {services.map((service) => (
         <ServiceCard
           key={service.id}
@@ -65,6 +66,7 @@ const ServicesSection = () => {
           imageWidth={service.imageWidth}
           tags={service.tags}
           reverse={service.reverse}  
+          className={service.className}
         />
       ))}
     </section>

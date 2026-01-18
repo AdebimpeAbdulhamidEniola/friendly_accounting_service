@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-// Remove unused import
+
 
 type ServiceTag = {
   id: string;
@@ -32,12 +32,12 @@ const ServiceCard = ({
   reverse = false,  // default false
 }: ServiceCardProps) => {
   return (
-    <Card className={cn("bg-hero/60 lg:w-[80%] pt-15 md:pr-55", className)}>
+    <Card className={cn("bg-hero/60 lg:w-[80%] pt-15 md:pr-5", className)}>
       <CardContent className={cn(
-        "flex gap-5 md:gap-10 flex-col md:flex-row",  // base responsive flex
-        reverse && "md:flex-row-reverse"  // reverse only on md+ row
+        "flex gap-5 md:gap-10 flex-col md:flex-row",  
+        reverse && "md:flex-row-reverse"  
       )}>
-        {/* Image - uses basis-1/2 */}
+        
         <div className="md:basis-1/2 flex justify-center">
           <Image 
             src={imageSrc} 
