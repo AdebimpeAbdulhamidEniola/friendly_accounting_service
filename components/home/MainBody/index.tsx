@@ -1,3 +1,4 @@
+import Client from "./ClientSection"
 import Description from "./Description"
 import ServicesSection from "./ServiceSection"
 
@@ -6,6 +7,7 @@ const MainBody = () => {
       <>
       <Description />
       <ServicesSection />
+      <Client />
       </>
     )
 }
