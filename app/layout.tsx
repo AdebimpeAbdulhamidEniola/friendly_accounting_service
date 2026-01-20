@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className= {workSans.variable}
+      <body className={`${workSans.variable} bg-background md:bg-background-mobile`}
       >
            {children}
       </body>

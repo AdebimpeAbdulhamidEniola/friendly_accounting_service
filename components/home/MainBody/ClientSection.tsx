@@ -50,25 +50,25 @@ const clients: Client[] = [
 
 const ClientSection = () => {
   return (
-    <div className="w-full bg-background py-16 px-8">
-      <h2 className="text-5xl font-light text-foreground text-center mb-16">
+    <div className="w-full bg-background  py-8 md:py-16 px-4 md:px-8 mx-auto">
+      <h2 className="text-[32px] md:text-5xl font-light text-foreground text-center mb-5">
         Hear From Our Happy Clients
       </h2>
       
       <Tabs defaultValue="graphic-designer" className="md:flex md:flex-row gap-0 max-w-7xl mx-auto">
-        <TabsList className="flex flex-col items-stretch bg-transparent gap-0 w-85 h-fit">
+        <TabsList className="flex flex-row md:flex-col items-stretch bg-transparent gap-0 w-full md:w-85 h-fit overflow-x-auto">
           {clients.map((client, index) => (
             <TabsTrigger 
               key={client.value} 
               value={client.value} 
-              className="data-[state=active]:bg-primary data-[state=inactive]:bg-transparent text-left rounded-none border-0 p-0 "
+              className="data-[state=active]:bg-primary data-[state=inactive]:bg-transparent text-left rounded-none border-0 p-0 data-[state=active]:text-primary-foreground data-[state=inactive]:text-foreground rounded-lg flex-shrink-0 min-w-[100px] md:min-w-[120px]"
             >
-              <div className="w-full px-8 py-6">
-                <hr className="border-t data-[state=active]:border-primary-foreground data-[state=inactive]:border-border mb-4" />
-                <p className="text-lg data-[state=active]:text-primary-foreground data-[state=inactive]:text-foreground font-normal mb-1">
+              <div className="w-full px-4 py-4 md:px-8 md:py-6">
+                <hr className="border-t-primary data-[state=active]:border-primary-foreground data-[state=inactive]:border-border mb-2" />
+                <p className="text-[12px] md:text-lg data-[state=active]:text-primary-foreground data-[state=inactive]:text-foreground font-normal mb-1 whitespace-normal">
                   {client.title}
                 </p>
-                <p className="text-sm data-[state=active]:text-primary-foreground data-[state=inactive]:text-muted-foreground">
+                <p className="text-xs data-[state=active]:text-primary-foreground data-[state=inactive]:text-muted-foreground font-light whitespace-normal">
                   {client.location}
                 </p>
               </div>
@@ -76,12 +76,12 @@ const ClientSection = () => {
           ))}
         </TabsList>
 
-        <div className="flex-1 border-l border-border pl-20 py-12">
+        <div className="flex-1 md:ml-15 md:border-l border-border md:pl-20 pl-0 py-12">
           {clients.map((client) => (
             <TabsContent key={client.value} value={client.value} className="mt-0">
               <div className="space-y-8">
-                <p className="text-3xl font-light text-foreground leading-relaxed">
-                  "{client.testimonial}"
+                <p className="text-3xl md:text-3xl font-light text-foreground leading-relaxed text-lg md:text-3xl">
+                  {`"${client.testimonial}"`}
                 </p>
                 <div className="flex items-center gap-4">
                   <Image 
@@ -89,7 +89,7 @@ const ClientSection = () => {
                     width={client.imageWidth} 
                     height={client.imageHeight} 
                     alt="Client photo"
-                    className="rounded-full object-cover"
+                    className="rounded-full object-cover w-12 h-12 md:w-auto md:h-auto"
                   />
                   <span className="text-base text-foreground">{client.name}</span>
                 </div>

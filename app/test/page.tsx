@@ -2,7 +2,7 @@ import Navigation from "@/components/common/Navigation";
 import Hero from "@/components/home/Hero";
 import MainBody from "@/components/home/MainBody";
 
-export default function TestNavPage() {
+const  TestNavPage=  () => {
   return (
     <div>
     <Navigation />
@@ -11,3 +11,5 @@ export default function TestNavPage() {
     </div>
   );
 }
+
+export default TestNavPage
