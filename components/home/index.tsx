@@ -1,8 +1,8 @@
 import ClientSection from "./ClientSection"
 import Description from "./Description"
 import ServicesSection from "./ServiceSection"
-import OfferSection from "./OfferSection"
-
+import ImageSection from "./ImageSection"
+import WhyUsSection from "./WhyUsSection"
 
 const MainBody = () => {
     return(
@@ -10,7 +10,8 @@ const MainBody = () => {
       <Description />
       <ServicesSection />
       <ClientSection />
-      <OfferSection/>
+      <ImageSection />
+      <WhyUsSection />
       </>
     )
 }
