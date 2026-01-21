@@ -3,6 +3,8 @@ import Description from "./Description"
 import ServicesSection from "./ServiceSection"
 import ImageSection from "./ImageSection"
 import WhyUsSection from "./WhyUsSection"
+import CustomPlan from "./CustomPlan"
+import CallToActionSection from "./CallToActionSection"
 
 const MainBody = () => {
     return(
@@ -12,6 +14,9 @@ const MainBody = () => {
       <ClientSection />
       <ImageSection />
       <WhyUsSection />
+      <CustomPlan />
+      <CallToActionSection />
+
       </>
     )
 }
