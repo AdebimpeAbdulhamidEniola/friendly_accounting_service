@@ -1,11 +1,10 @@
-import Navigation from "@/components/common/Navigation"
-import Footer from "@/components/common/Footer"
+import MainBody from "@/components/home"
+
 
 const Home = () => {
   return(
     <div>
-      <Navigation />
-      <Footer />
+      <MainBody />
     </div>
   )
 }

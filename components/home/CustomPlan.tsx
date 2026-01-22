@@ -16,7 +16,7 @@ const CustomPlan = () => {
                 </CardContent>
             </Card>
 
-            <Image src="/images/stack-woods.png" alt="Stack Woods" width={590} height={375} className="w-[295px] md:w-[350px] lg:w-[590px] h-auto -order-1 md:order-0" />
+            <Image src="/images/stack-woods.png" alt="Stack Woods" width={590} height={375} className="w-[295px] md:w-[350px] lg:w-[590px] h-[375px] md:h-[445px] lg:h-[375px] -order-1 md:order-0 object-cover" />
         </div>
     )
 
