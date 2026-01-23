@@ -1,10 +1,8 @@
-import ServicesHero from "@/components/services/ServicesHero";
+import Services from "@/components/services";
 
 const Page = () => {
     return(
-        <>
-        <ServicesHero />
-        </>
+        <Services />
     )
 }
 
