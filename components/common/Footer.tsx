@@ -22,7 +22,7 @@ const Footer = () => {
                 Services
               </Link>
              
-             <Link href="/book">
+             <Link href="/booking">
                <Button className="bg-white text-primary rounded-3xl hover:bg-card/90 ">Book An Appointment</Button>
              </Link>
             </div>
@@ -44,7 +44,7 @@ const Footer = () => {
             </Link>
              
             {/* Right side - Book Appointment */}
-            <Link href="/book">
+            <Link href="/booking">
               <Button className="bg-white text-primary rounded-3xl hover:bg-card/90 ">Book An Appointment</Button>
             </Link>
           </div>
@@ -65,7 +65,7 @@ const Footer = () => {
                 Services
               </Link>
              
-             <Link href="/book" className="ml-auto">
+             <Link href="/booking" className="ml-auto">
                <Button className="bg-white text-primary rounded-3xl hover:bg-card/90 ">Book An Appointment</Button>
              </Link>
             </div>

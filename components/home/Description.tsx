@@ -2,6 +2,7 @@ import React from 'react'
 import { dmSans } from '@/font'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const Description = () => {
   return (
@@ -9,7 +10,9 @@ const Description = () => {
         <div className={cn("text-foreground font-medium text-[15px]", dmSans.variable)}>Services</div>
         <p className="text-[60px]"> Let us handle the numbers so you can handle your success</p>
         <p>Serving individuals and small businesses since 1987</p>
-        <Button className='rounded-full'>Schedule a call</Button>
+        <Link href="/booking">
+            <Button className='rounded-full'>Schedule a call</Button>
+        </Link>
     </div>
   )
 }

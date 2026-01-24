@@ -8,10 +8,12 @@ const Navigation = () => {
       <div className="mr-auto font-bold text-primary self-center">Noble Finances</div>
       <Link href="/service" className="text-[12px] text-medium self-center">Services</Link>
       <div>
-        <Button className="rounded-full">
-          <span className="block sm:hidden">Book</span>
-          <span className="hidden sm:block">Book an appointment</span>
-        </Button>
+        <Link href="/booking">
+          <Button className="rounded-full">
+            <span className="block sm:hidden">Book</span>
+            <span className="hidden sm:block">Book an appointment</span>
+          </Button>
+        </Link>
       </div>
     </div>
   );
