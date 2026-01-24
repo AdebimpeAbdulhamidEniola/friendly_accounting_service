@@ -5,10 +5,12 @@ import ImageSection from "./ImageSection"
 import WhyUsSection from "./WhyUsSection"
 import CustomPlan from "./CustomPlan"
 import CallToActionSection from "./CallToActionSection"
+import Hero from "./Hero"
 
 const MainBody = () => {
     return(
       <>
+      <Hero />
       <Description />
       <ServicesSection />
       <ClientSection />

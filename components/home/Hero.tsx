@@ -22,9 +22,9 @@ const Hero = () => {
         </div>
 
         {/* Second Flex */}
-        <div className="self-center lg:mt-[-7em] -order-1 md:order-1">
+        <div className="self-center lg:mt-[-7em]  -order-1 md:order-1">
           <Image
-            src="/images/Globe-desktop.svg"
+            src="/images/Globe.svg"
             alt="Financial Globe showing global reach"
             width={429}
             height={412}
